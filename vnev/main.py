@@ -1,16 +1,16 @@
 import cv2
 
 #Read Image
-image = cv2.imread('D:/USER/Antigravity/The_model/vnev/male_1.jpg')
+image = cv2.imread('D:/USER/Antigravity/The_model/The_model/vnev/male_1.jpg')
 image = cv2.resize(image, (720, 640))
 
 #Define Model
-face_pbtxt = "D:/UsER/Antigravity/The_model/model/opencv_face_detector.pbtxt"
-face_pb = "D:/UsER/Antigravity/The_model/model/opencv_face_detector_uint8.pb"
-age_prototxt = "D:/UsER/Antigravity/The_model/model/age_deploy.prototxt"
-age_model = "D:/UsER/Antigravity/The_model/model/age_net.caffemodel"
-gender_prototxt = "D:/UsER/Antigravity/The_model/model/gender_deploy.prototxt"
-gender_model = "D:/UsER/Antigravity/The_model/model/gender_net.caffemodel"
+face_pbtxt = "D:/USER/Antigravity/The_model/The_model/model/opencv_face_detector.pbtxt"
+face_pb = "D:/USER/Antigravity/The_model/The_model/model/opencv_face_detector_uint8.pb"
+age_prototxt = "D:/USER/Antigravity/The_model/The_model/model/age_deploy.prototxt"
+age_model = "D:/USER/Antigravity/The_model/The_model/model/age_net.caffemodel"
+gender_prototxt = "D:/USER/Antigravity/The_model/The_model/model/gender_deploy.prototxt"
+gender_model = "D:/USER/Antigravity/The_model/The_model/model/gender_net.caffemodel"
 MODEL_MEAN_VALUES= [104, 117, 123]
 
 #Load Models 
