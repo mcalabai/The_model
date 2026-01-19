@@ -64,8 +64,12 @@ for face_bound in face_bounds:
         age.setInput(blob)
         age_prediction = age.forward()
         age = age_classifications[age_prediction[0].argmax()]
-        print(gender, age)     
-
+        print(age)
+        if (age == '(0-2)') or (age == '(4-6)') or (age == '(8-12)'):
+            age_class = 'Not Eligible for social media'
+        elif (age == '(15-20)') or (age == '(25-32)') or (age == '(38-43)') or (age == '(48-53)'):
+            age_class = 'Eligible for social media'    
+        print(age_class)
 
     except Exception as e :
         print(e)
